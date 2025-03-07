@@ -21,15 +21,15 @@ class Solution {
         return result;
     }
     public int romanToInt(char c) {
-        switch (c) {
-            case 'I': return 1;
-            case 'V': return 5;
-            case 'X': return 10;
-            case 'L': return 50;
-            case 'C': return 100;
-            case 'D': return 500;
-            default: return 1000;
-        }
+        return switch (c) {
+            case 'I' -> 1;
+            case 'V' -> 5;
+            case 'X' -> 10;
+            case 'L' -> 50;
+            case 'C' -> 100;
+            case 'D' -> 500;
+            default -> 1000;
+        };
     }
 }
 // @lc code=end
